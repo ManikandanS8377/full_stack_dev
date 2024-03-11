@@ -1,0 +1,319 @@
+ERROR - 2024-03-09 04:14:27 --> mysqli_sql_exception: Column 'roll_number' cannot be null in C:\xampp\htdocs\test\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\test\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `st...', 0)
+#1 C:\xampp\htdocs\test\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `st...')
+#2 C:\xampp\htdocs\test\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `st...')
+#3 C:\xampp\htdocs\test\app\Models\Database_con.php(54): CodeIgniter\Database\BaseConnection->query('INSERT INTO `st...', Array)
+#4 C:\xampp\htdocs\test\app\Controllers\Home.php(32): App\Models\Database_con->createValues(NULL, NULL, NULL)
+#5 C:\xampp\htdocs\test\system\CodeIgniter.php(941): App\Controllers\Home->createValue()
+#6 C:\xampp\htdocs\test\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\test\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\test\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-09 04:14:27 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'roll_number' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Database_con.php(54): CodeIgniter\Database\BaseConnection->query('INSERT INTO `student_details`(`roll_number`,`name`,`mark`) VALUES(?,?,?)', [...])
+ 2 APPPATH\Controllers\Home.php(32): App\Models\Database_con->createValues(null, null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->createValue()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-09 04:14:27 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'roll_number' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `student_details`(`roll_number`,`name`,`mark`) VALUES(NULL,NULL,NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `student_details`(`roll_number`,`name`,`mark`) VALUES(NULL,NULL,NULL)')
+ 3 APPPATH\Models\Database_con.php(54): CodeIgniter\Database\BaseConnection->query('INSERT INTO `student_details`(`roll_number`,`name`,`mark`) VALUES(?,?,?)', [...])
+ 4 APPPATH\Controllers\Home.php(32): App\Models\Database_con->createValues(null, null, null)
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->createValue()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-09 04:14:27 --> [Caused by] mysqli_sql_exception: Column 'roll_number' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `student_details`(`roll_number`,`name`,`mark`) VALUES(NULL,NULL,NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `student_details`(`roll_number`,`name`,`mark`) VALUES(NULL,NULL,NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `student_details`(`roll_number`,`name`,`mark`) VALUES(NULL,NULL,NULL)')
+ 4 APPPATH\Models\Database_con.php(54): CodeIgniter\Database\BaseConnection->query('INSERT INTO `student_details`(`roll_number`,`name`,`mark`) VALUES(?,?,?)', [...])
+ 5 APPPATH\Controllers\Home.php(32): App\Models\Database_con->createValues(null, null, null)
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->createValue()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-09 04:14:29 --> mysqli_sql_exception: Column 'roll_number' cannot be null in C:\xampp\htdocs\test\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\test\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `st...', 0)
+#1 C:\xampp\htdocs\test\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `st...')
+#2 C:\xampp\htdocs\test\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `st...')
+#3 C:\xampp\htdocs\test\app\Models\Database_con.php(54): CodeIgniter\Database\BaseConnection->query('INSERT INTO `st...', Array)
+#4 C:\xampp\htdocs\test\app\Controllers\Home.php(32): App\Models\Database_con->createValues(NULL, NULL, NULL)
+#5 C:\xampp\htdocs\test\system\CodeIgniter.php(941): App\Controllers\Home->createValue()
+#6 C:\xampp\htdocs\test\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\test\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\test\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-09 04:14:29 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'roll_number' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Database_con.php(54): CodeIgniter\Database\BaseConnection->query('INSERT INTO `student_details`(`roll_number`,`name`,`mark`) VALUES(?,?,?)', [...])
+ 2 APPPATH\Controllers\Home.php(32): App\Models\Database_con->createValues(null, null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->createValue()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-09 04:14:29 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'roll_number' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `student_details`(`roll_number`,`name`,`mark`) VALUES(NULL,NULL,NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `student_details`(`roll_number`,`name`,`mark`) VALUES(NULL,NULL,NULL)')
+ 3 APPPATH\Models\Database_con.php(54): CodeIgniter\Database\BaseConnection->query('INSERT INTO `student_details`(`roll_number`,`name`,`mark`) VALUES(?,?,?)', [...])
+ 4 APPPATH\Controllers\Home.php(32): App\Models\Database_con->createValues(null, null, null)
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->createValue()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-09 04:14:29 --> [Caused by] mysqli_sql_exception: Column 'roll_number' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `student_details`(`roll_number`,`name`,`mark`) VALUES(NULL,NULL,NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `student_details`(`roll_number`,`name`,`mark`) VALUES(NULL,NULL,NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `student_details`(`roll_number`,`name`,`mark`) VALUES(NULL,NULL,NULL)')
+ 4 APPPATH\Models\Database_con.php(54): CodeIgniter\Database\BaseConnection->query('INSERT INTO `student_details`(`roll_number`,`name`,`mark`) VALUES(?,?,?)', [...])
+ 5 APPPATH\Controllers\Home.php(32): App\Models\Database_con->createValues(null, null, null)
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->createValue()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-09 04:18:48 --> mysqli_sql_exception: Column 'roll_number' cannot be null in C:\xampp\htdocs\test\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\test\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `st...', 0)
+#1 C:\xampp\htdocs\test\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `st...')
+#2 C:\xampp\htdocs\test\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `st...')
+#3 C:\xampp\htdocs\test\app\Models\Database_con.php(54): CodeIgniter\Database\BaseConnection->query('INSERT INTO `st...', Array)
+#4 C:\xampp\htdocs\test\app\Controllers\Home.php(32): App\Models\Database_con->createValues(NULL, NULL, NULL)
+#5 C:\xampp\htdocs\test\system\CodeIgniter.php(941): App\Controllers\Home->createValue()
+#6 C:\xampp\htdocs\test\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\test\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\test\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-09 04:18:48 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'roll_number' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Database_con.php(54): CodeIgniter\Database\BaseConnection->query('INSERT INTO `student_details`(`roll_number`,`name`,`mark`) VALUES(?,?,?)', [...])
+ 2 APPPATH\Controllers\Home.php(32): App\Models\Database_con->createValues(null, null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->createValue()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-09 04:18:48 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'roll_number' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `student_details`(`roll_number`,`name`,`mark`) VALUES(NULL,NULL,NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `student_details`(`roll_number`,`name`,`mark`) VALUES(NULL,NULL,NULL)')
+ 3 APPPATH\Models\Database_con.php(54): CodeIgniter\Database\BaseConnection->query('INSERT INTO `student_details`(`roll_number`,`name`,`mark`) VALUES(?,?,?)', [...])
+ 4 APPPATH\Controllers\Home.php(32): App\Models\Database_con->createValues(null, null, null)
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->createValue()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-09 04:18:48 --> [Caused by] mysqli_sql_exception: Column 'roll_number' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `student_details`(`roll_number`,`name`,`mark`) VALUES(NULL,NULL,NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `student_details`(`roll_number`,`name`,`mark`) VALUES(NULL,NULL,NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `student_details`(`roll_number`,`name`,`mark`) VALUES(NULL,NULL,NULL)')
+ 4 APPPATH\Models\Database_con.php(54): CodeIgniter\Database\BaseConnection->query('INSERT INTO `student_details`(`roll_number`,`name`,`mark`) VALUES(?,?,?)', [...])
+ 5 APPPATH\Controllers\Home.php(32): App\Models\Database_con->createValues(null, null, null)
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->createValue()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-09 04:25:19 --> mysqli_sql_exception: Column 'roll_number' cannot be null in C:\xampp\htdocs\test\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\test\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `st...', 0)
+#1 C:\xampp\htdocs\test\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `st...')
+#2 C:\xampp\htdocs\test\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `st...')
+#3 C:\xampp\htdocs\test\app\Models\Database_con.php(54): CodeIgniter\Database\BaseConnection->query('INSERT INTO `st...', Array)
+#4 C:\xampp\htdocs\test\app\Controllers\Home.php(32): App\Models\Database_con->createValues(NULL, NULL, NULL)
+#5 C:\xampp\htdocs\test\system\CodeIgniter.php(941): App\Controllers\Home->createValue()
+#6 C:\xampp\htdocs\test\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\test\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\test\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-09 04:25:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'roll_number' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Database_con.php(54): CodeIgniter\Database\BaseConnection->query('INSERT INTO `student_details`(`roll_number`,`name`,`mark`) VALUES(?,?,?)', [...])
+ 2 APPPATH\Controllers\Home.php(32): App\Models\Database_con->createValues(null, null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->createValue()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-09 04:25:19 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'roll_number' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `student_details`(`roll_number`,`name`,`mark`) VALUES(NULL,NULL,NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `student_details`(`roll_number`,`name`,`mark`) VALUES(NULL,NULL,NULL)')
+ 3 APPPATH\Models\Database_con.php(54): CodeIgniter\Database\BaseConnection->query('INSERT INTO `student_details`(`roll_number`,`name`,`mark`) VALUES(?,?,?)', [...])
+ 4 APPPATH\Controllers\Home.php(32): App\Models\Database_con->createValues(null, null, null)
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->createValue()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-09 04:25:19 --> [Caused by] mysqli_sql_exception: Column 'roll_number' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `student_details`(`roll_number`,`name`,`mark`) VALUES(NULL,NULL,NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `student_details`(`roll_number`,`name`,`mark`) VALUES(NULL,NULL,NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `student_details`(`roll_number`,`name`,`mark`) VALUES(NULL,NULL,NULL)')
+ 4 APPPATH\Models\Database_con.php(54): CodeIgniter\Database\BaseConnection->query('INSERT INTO `student_details`(`roll_number`,`name`,`mark`) VALUES(?,?,?)', [...])
+ 5 APPPATH\Controllers\Home.php(32): App\Models\Database_con->createValues(null, null, null)
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->createValue()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-09 04:25:35 --> mysqli_sql_exception: Column 'roll_number' cannot be null in C:\xampp\htdocs\test\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\test\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `st...', 0)
+#1 C:\xampp\htdocs\test\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `st...')
+#2 C:\xampp\htdocs\test\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `st...')
+#3 C:\xampp\htdocs\test\app\Models\Database_con.php(54): CodeIgniter\Database\BaseConnection->query('INSERT INTO `st...', Array)
+#4 C:\xampp\htdocs\test\app\Controllers\Home.php(32): App\Models\Database_con->createValues(NULL, NULL, NULL)
+#5 C:\xampp\htdocs\test\system\CodeIgniter.php(941): App\Controllers\Home->createValue()
+#6 C:\xampp\htdocs\test\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\test\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\test\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-09 04:25:35 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'roll_number' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Database_con.php(54): CodeIgniter\Database\BaseConnection->query('INSERT INTO `student_details`(`roll_number`,`name`,`mark`) VALUES(?,?,?)', [...])
+ 2 APPPATH\Controllers\Home.php(32): App\Models\Database_con->createValues(null, null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->createValue()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-09 04:25:35 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'roll_number' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `student_details`(`roll_number`,`name`,`mark`) VALUES(NULL,NULL,NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `student_details`(`roll_number`,`name`,`mark`) VALUES(NULL,NULL,NULL)')
+ 3 APPPATH\Models\Database_con.php(54): CodeIgniter\Database\BaseConnection->query('INSERT INTO `student_details`(`roll_number`,`name`,`mark`) VALUES(?,?,?)', [...])
+ 4 APPPATH\Controllers\Home.php(32): App\Models\Database_con->createValues(null, null, null)
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->createValue()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-09 04:25:35 --> [Caused by] mysqli_sql_exception: Column 'roll_number' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `student_details`(`roll_number`,`name`,`mark`) VALUES(NULL,NULL,NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `student_details`(`roll_number`,`name`,`mark`) VALUES(NULL,NULL,NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `student_details`(`roll_number`,`name`,`mark`) VALUES(NULL,NULL,NULL)')
+ 4 APPPATH\Models\Database_con.php(54): CodeIgniter\Database\BaseConnection->query('INSERT INTO `student_details`(`roll_number`,`name`,`mark`) VALUES(?,?,?)', [...])
+ 5 APPPATH\Controllers\Home.php(32): App\Models\Database_con->createValues(null, null, null)
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->createValue()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-09 05:03:49 --> ErrorException: Undefined variable $data
+in APPPATH\Views\dashboard_home.php on line 108.
+ 1 APPPATH\Views\dashboard_home.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\test\\app\\Views\\dashboard_home.php', 108)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\test\\app\\Views\\dashboard_home.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('dashboard_home', [], true)
+ 5 APPPATH\Controllers\Home.php(35): view('dashboard_home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->createValue()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-09 05:04:07 --> ErrorException: Undefined variable $data
+in APPPATH\Views\dashboard_home.php on line 108.
+ 1 APPPATH\Views\dashboard_home.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\test\\app\\Views\\dashboard_home.php', 108)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\test\\app\\Views\\dashboard_home.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('dashboard_home', [], true)
+ 5 APPPATH\Controllers\Home.php(35): view('dashboard_home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->createValue()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-09 05:04:16 --> ErrorException: Undefined variable $datas
+in APPPATH\Views\dashboard_home.php on line 108.
+ 1 APPPATH\Views\dashboard_home.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datas', 'C:\\xampp\\htdocs\\test\\app\\Views\\dashboard_home.php', 108)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\test\\app\\Views\\dashboard_home.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('dashboard_home', [], true)
+ 5 APPPATH\Controllers\Home.php(35): view('dashboard_home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->createValue()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-09 05:08:21 --> ErrorException: Undefined variable $status
+in APPPATH\Views\dashboard_home.php on line 105.
+ 1 APPPATH\Views\dashboard_home.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $status', 'C:\\xampp\\htdocs\\test\\app\\Views\\dashboard_home.php', 105)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\test\\app\\Views\\dashboard_home.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('dashboard_home', [], true)
+ 5 APPPATH\Controllers\Home.php(14): view('dashboard_home')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-09 05:08:22 --> ErrorException: Undefined variable $status
+in APPPATH\Views\dashboard_home.php on line 105.
+ 1 APPPATH\Views\dashboard_home.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $status', 'C:\\xampp\\htdocs\\test\\app\\Views\\dashboard_home.php', 105)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\test\\app\\Views\\dashboard_home.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('dashboard_home', [], true)
+ 5 APPPATH\Controllers\Home.php(14): view('dashboard_home')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-09 05:09:28 --> ErrorException: Undefined variable $status
+in APPPATH\Views\dashboard_home.php on line 105.
+ 1 APPPATH\Views\dashboard_home.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $status', 'C:\\xampp\\htdocs\\test\\app\\Views\\dashboard_home.php', 105)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\test\\app\\Views\\dashboard_home.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('dashboard_home', [], true)
+ 5 APPPATH\Controllers\Home.php(17): view('dashboard_home')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-09 05:09:38 --> ErrorException: Undefined variable $datas
+in APPPATH\Controllers\Home.php on line 17.
+ 1 APPPATH\Controllers\Home.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datas', 'C:\\xampp\\htdocs\\test\\app\\Controllers\\Home.php', 17)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-09 06:04:50 --> mysqli_sql_exception: Column 'roll_number' cannot be null in C:\xampp\htdocs\test\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\test\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `st...', 0)
+#1 C:\xampp\htdocs\test\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `st...')
+#2 C:\xampp\htdocs\test\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `st...')
+#3 C:\xampp\htdocs\test\app\Models\Database_con.php(54): CodeIgniter\Database\BaseConnection->query('INSERT INTO `st...', Array)
+#4 C:\xampp\htdocs\test\app\Controllers\Home.php(36): App\Models\Database_con->createValues(NULL, NULL, NULL)
+#5 C:\xampp\htdocs\test\system\CodeIgniter.php(941): App\Controllers\Home->createValue()
+#6 C:\xampp\htdocs\test\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\test\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\test\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-09 06:04:50 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'roll_number' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Database_con.php(54): CodeIgniter\Database\BaseConnection->query('INSERT INTO `student_details`(`roll_number`,`name`,`mark`) VALUES(?,?,?)', [...])
+ 2 APPPATH\Controllers\Home.php(36): App\Models\Database_con->createValues(null, null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->createValue()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-09 06:04:50 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'roll_number' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `student_details`(`roll_number`,`name`,`mark`) VALUES(NULL,NULL,NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `student_details`(`roll_number`,`name`,`mark`) VALUES(NULL,NULL,NULL)')
+ 3 APPPATH\Models\Database_con.php(54): CodeIgniter\Database\BaseConnection->query('INSERT INTO `student_details`(`roll_number`,`name`,`mark`) VALUES(?,?,?)', [...])
+ 4 APPPATH\Controllers\Home.php(36): App\Models\Database_con->createValues(null, null, null)
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->createValue()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-09 06:04:50 --> [Caused by] mysqli_sql_exception: Column 'roll_number' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `student_details`(`roll_number`,`name`,`mark`) VALUES(NULL,NULL,NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `student_details`(`roll_number`,`name`,`mark`) VALUES(NULL,NULL,NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `student_details`(`roll_number`,`name`,`mark`) VALUES(NULL,NULL,NULL)')
+ 4 APPPATH\Models\Database_con.php(54): CodeIgniter\Database\BaseConnection->query('INSERT INTO `student_details`(`roll_number`,`name`,`mark`) VALUES(?,?,?)', [...])
+ 5 APPPATH\Controllers\Home.php(36): App\Models\Database_con->createValues(null, null, null)
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->createValue()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
